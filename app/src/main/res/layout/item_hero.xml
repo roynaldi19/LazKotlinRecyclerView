@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/iv_main"
+        android:id="@+id/iv_hero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:src="@drawable/ahmad_dahlan"
@@ -14,4 +14,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_hero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Ahmad Dahlan"
+        android:textSize="32sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_hero" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
