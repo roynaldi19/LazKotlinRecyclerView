@@ -6,15 +6,15 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class MainAdapter(private val listName: List<String>): RecyclerView.Adapter<MainAdapter.ViewHolder>() {
+class TextAdapter(private val listName: List<String>): RecyclerView.Adapter<TextAdapter.ViewHolder>() {
 
     class ViewHolder (view: View): RecyclerView.ViewHolder(view){
-        val tvName: TextView = view.findViewById(R.id.tv_item)
+        val tvName: TextView = view.findViewById(R.id.tv_text)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
        return ViewHolder(
-           LayoutInflater.from(parent.context).inflate( R.layout.item_rv, parent, false)
+           LayoutInflater.from(parent.context).inflate( R.layout.item_text, parent, false)
        )
     }
 
